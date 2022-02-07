@@ -1,0 +1,3728 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 1in
+\topmargin 1in
+\rightmargin 1in
+\bottommargin 1in
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Problem Set 1
+\begin_inset Newline newline
+\end_inset
+
+Macro
+\begin_inset Newline newline
+\end_inset
+
+Yuriy
+\end_layout
+
+\begin_layout Author
+Steven Zheng
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+steven_zheng@berkeley.edu
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Date
+February 7, 2022 (my birthday!)
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace medskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Problem 1
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+A time series process is deterministic if its stochastic nature has no relation
+ with time so that it can be predicted with certainty.
+ The simplest example of a deterministic process is 
+\begin_inset Formula $x_{t}=x$
+\end_inset
+
+ for all 
+\begin_inset Formula $t$
+\end_inset
+
+.
+ Consider 
+\begin_inset Formula $x_{t}=\alpha*\cos(t)+\beta*\sin(t)$
+\end_inset
+
+ with 
+\begin_inset Formula $\alpha\sim N(0,1)$
+\end_inset
+
+ and 
+\begin_inset Formula $\beta\sim N(0,1)$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Problem 1a
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+What is the mean and variance of 
+\begin_inset Formula $x_{t}$
+\end_inset
+
+? 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace medskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+From class, we have the mean
+\begin_inset Formula 
+\begin{align*}
+x_{t} & =\alpha\cos(t)+\beta\sin(t)\\
+\implies\mathbb{E}[x_{t}] & =\mathbb{E}[\alpha]\cos(t)+\mathbb{E}[\beta]\sin(t)\\
+ & =0
+\end{align*}
+
+\end_inset
+
+and the variance
+\begin_inset Formula 
+\begin{align*}
+\text{Var}[x_{t}] & =\mathbb{E}[x_{t}^{2}]\\
+ & =\mathbb{E}[\alpha^{2}]\cos^{2}(t)+\mathbb{E}[\beta^{2}]\sin^{2}(t)\\
+ & =\cos^{2}(t)+\sin^{2}(t)\\
+ & =1.
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Problem 1b
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+Does 
+\begin_inset Formula $\mathbb{E}\left(x_{t}x_{t-k}\right)$
+\end_inset
+
+ depend on time 
+\begin_inset Formula $t$
+\end_inset
+
+? Prove.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace medskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We have the covariance
+\begin_inset Formula 
+\begin{align*}
+\mathbb{E}\left[x_{t}x_{t-k}\right] & =\mathbb{E}\left[(\alpha\cos(t)+\beta\sin(t))(\alpha\cos(t-k)+\beta\sin(t-k))\right]\\
+ & =\mathbb{E}\left[\alpha^{2}\cos(t)\cos(t-k)+\alpha\beta\sin(t-k)\cos(t)+\alpha\beta\sin(t)\cos(t-k)+\beta^{2}\sin(t)\sin(t-k)\right]\\
+ & =\mathbb{E}\left[\alpha^{2}\right]\cos(t)\cos(t-k)+\mathbb{E}\left[\alpha\beta\right]\sin(t-k)\cos(t)+\mathbb{E}\left[\alpha\beta\right]\sin(t)\cos(t-k)+\mathbb{E}\left[\beta^{2}\right]\sin(t)\sin(t-k)\\
+ & =\cos(t)\cos(t-k)+\sin(t)\sin(t-k)\\
+ & =\cos(k)
+\end{align*}
+
+\end_inset
+
+so 
+\begin_inset Formula $\mathbb{E}[x_{t}x_{t-k}]$
+\end_inset
+
+ does not depend on time 
+\begin_inset Formula $t$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Problem 2
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+Suppose 
+\begin_inset Formula $e_{t}=u_{t}\sqrt{b+\alpha e_{t-1}^{2}}$
+\end_inset
+
+ where 
+\begin_inset Formula $u_{t}\sim iid(0,1)$
+\end_inset
+
+.
+ The process 
+\begin_inset Formula $e_{t}$
+\end_inset
+
+ is called an ARCH process.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Problem 2a
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+Is 
+\begin_inset Formula $e_{t}$
+\end_inset
+
+ serially correlated? 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace medskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Note that 
+\begin_inset Formula $u_{t}$
+\end_inset
+
+ is IID so 
+\begin_inset Formula $\mathbb{E}[u_{t}u_{t-k}]=0$
+\end_inset
+
+.
+ Then we have
+\begin_inset Formula 
+\begin{align*}
+\mathbb{E}[e_{t}e_{t-k}] & =\mathbb{E}\left[u_{t}\sqrt{b+\alpha e_{t-1}^{2}}u_{t-k}\sqrt{b+\alpha e_{t-k}^{2}}\right]\\
+ & =\mathbb{E}\left[u_{t}u_{t-k}\right]\mathbb{E}\left[\sqrt{b+\alpha e_{t-1}^{2}}\sqrt{b+\alpha e_{t-k}^{2}}\right]\text{, by independence}\\
+ & =0
+\end{align*}
+
+\end_inset
+
+so 
+\begin_inset Formula $e_{t}$
+\end_inset
+
+ is not serially correlated.
+\end_layout
+
+\begin_layout Subsection
+Problem 2b
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+What is variance of 
+\begin_inset Formula $e_{t}$
+\end_inset
+
+ conditional on 
+\begin_inset Formula $e_{t-1}$
+\end_inset
+
+? Is the conditional variance serially correlated? 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace medskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Note that 
+\begin_inset Formula $\mathbb{E}_{t-1}[e_{t}]=0$
+\end_inset
+
+ since 
+\begin_inset Formula $v_{t}\sim IID(0,1)$
+\end_inset
+
+.
+ Then we have
+\begin_inset Formula 
+\begin{align*}
+\mathbb{E}_{t-1}[e_{t}^{2}] & =\mathbb{E}_{t-1}\left[u_{t}^{2}\left(b+\alpha e_{t-1}^{2}\right)\right]\\
+ & =\mathbb{E}_{t-1}\left[u_{t}^{2}\right]\mathbb{E}_{t-1}\left[b+\alpha e_{t-1}^{2}\right]\text{, by independence}\\
+ & =\mathbb{E}_{t-1}\left[b+\alpha e_{t-1}^{2}\right]\\
+ & =b+\alpha e_{t-1}^{2}
+\end{align*}
+
+\end_inset
+
+so the conditional variance of 
+\begin_inset Formula $e_{t}$
+\end_inset
+
+ is dependent on the realized value of 
+\begin_inset Formula $e_{t-1}^{2}$
+\end_inset
+
+.
+ Note that the unconditional variance is
+\begin_inset Formula 
+\begin{align*}
+\mathbb{E}[e_{t}^{2}] & =b+\alpha\mathbb{E}[e_{t-1}^{2}]\\
+ & =b+\alpha\mathbb{E}[e_{t}^{2}]\\
+\iff(1-\alpha)\mathbb{E}[e_{t}^{2}] & =b\\
+\iff\mathbb{E}[e_{t}^{2}] & =\frac{b}{1-\alpha}.
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We have 
+\begin_inset Formula $\mathbb{E}_{t-2}[e_{t-1}^{2}]=b+\alpha e_{t-2}^{2}$
+\end_inset
+
+ so
+\begin_inset Formula 
+\begin{align*}
+\text{Cov}\left\{ \mathbb{E}_{t-1}[e_{t}^{2}],\mathbb{E}_{t-2}[e_{t-1}^{2}]\right\}  & =\mathbb{E}\left\{ \mathbb{E}_{t-1}[e_{t}^{2}]\mathbb{E}_{t-2}[e_{t-1}^{2}]\right\} -\mathbb{E}\left\{ \mathbb{E}_{t-1}[e_{t}^{2}]\right\} \mathbb{E}\left\{ \mathbb{E}_{t-2}[e_{t-1}^{2}]\right\} \\
+ & =\mathbb{E}\left\{ \left(b+\alpha e_{t-1}^{2}\right)\left(b+\alpha e_{t-2}^{2}\right)\right\} -\mathbb{E}\left\{ e_{t}^{2}\right\} \mathbb{E}\left\{ e_{t-1}^{2}\right\} \\
+ & =\mathbb{E}\left\{ b^{2}+b\alpha e_{t-2}^{2}+b\alpha e_{t-1}^{2}+\alpha^{2}e_{t-1}^{2}e_{t-2}^{2}\right\} -\left(\frac{b}{1-\alpha}\right)^{2}\\
+ & =b^{2}+b\alpha\mathbb{E}\left\{ e_{t-2}^{2}\right\} +b\alpha\mathbb{E}\left\{ e_{t-1}^{2}\right\} +\alpha^{2}\mathbb{E}\left\{ e_{t-1}^{2}e_{t-2}^{2}\right\} -\left(\frac{b}{1-\alpha}\right)^{2}\\
+ & =b^{2}+2b\alpha\frac{b}{1-\alpha}+\alpha^{2}\mathbb{E}\left\{ e_{t-1}^{2}e_{t-2}^{2}\right\} -\left(\frac{b}{1-\alpha}\right)^{2}
+\end{align*}
+
+\end_inset
+
+so there is some serial correlation in the conditional variances.
+\end_layout
+
+\begin_layout Subsection
+Problem 2c
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+Let 
+\begin_inset Formula $x_{t}=e_{t}^{2}-\sigma^{2}$
+\end_inset
+
+ where 
+\begin_inset Formula $\sigma^{2}=E\left(e_{t}^{2}\mid e_{t-1},e_{t-2},\ldots\right)$
+\end_inset
+
+.
+ Prove that 
+\begin_inset Formula $x_{t}$
+\end_inset
+
+ is mds.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace medskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+WTS: 
+\begin_inset Formula $\mathbb{E}_{t-1}[x_{t}]=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+We have
+\begin_inset Formula 
+\begin{align*}
+\mathbb{E}_{t-1}[x_{t}] & =\mathbb{E}_{t-1}\left[e_{t}^{2}-\sigma^{2}\right]\\
+ & =\mathbb{E}_{t-1}\left[e_{t}^{2}\right]-\mathbb{E}_{t-1}\left[\sigma^{2}\right]\\
+ & =\sigma^{2}-\sigma^{2}\\
+ & =0.
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Problem 2d
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+Prove that 
+\begin_inset Formula $x_{t}$
+\end_inset
+
+ is white noise.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace medskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+From Enders, we need to show that 
+\begin_inset Formula $\{x_{t}\}$
+\end_inset
+
+ is mean zero, constant variance, and uncorrelated with other realizations.
+\end_layout
+
+\begin_layout Standard
+We have the mean
+\begin_inset Formula 
+\begin{align*}
+\mathbb{E}[x_{t}] & =\mathbb{E}\left[e_{t}^{2}-\sigma^{2}\right]\\
+ & =0\text{, by law of iterated expectations}
+\end{align*}
+
+\end_inset
+
+and variance
+\begin_inset Formula 
+\begin{align*}
+\mathbb{E}[x_{t}^{2}] & =\mathbb{E}\left[\left(e_{t}^{2}-\sigma^{2}\right)^{2}\right]\\
+ & =\mathbb{E}\left[\left(e_{t}^{2}\right)^{2}-2e_{t}^{2}\sigma^{2}+\left(\sigma^{2}\right)^{2}\right]\\
+ & =\mathbb{E}\left[e_{t}^{2}\right]\mathbb{E}\left[e_{t}^{2}\right]-2\sigma^{2}\mathbb{E}\left[e_{t}^{2}\right]+\left(\sigma^{2}\right)^{2}\\
+ & =\left[\frac{b}{1-\alpha}\right]^{2}-2\sigma^{2}\frac{b}{1-\alpha}+\left(\sigma^{2}\right)^{2}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+And the covariance
+\begin_inset Formula 
+\begin{align*}
+\mathbb{E}\left[x_{t}x_{t-k}\right] & =\mathbb{E}\left[\left(e_{t}^{2}-\sigma^{2}\right)\left(e_{t-k}^{2}-\sigma^{2}\right)\right]\\
+ & =\mathbb{E}\left[e_{t}^{2}e_{t-k}^{2}-\sigma^{2}e_{t}^{2}-\sigma^{2}e_{t-k}^{2}+\left(\sigma^{2}\right)^{2}\right]\\
+ & =\mathbb{E}\left[e_{t}^{2}\right]\mathbb{E}\left[e_{t-k}^{2}\right]-\sigma^{2}\mathbb{E}\left[e_{t}^{2}\right]-\sigma^{2}\mathbb{E}\left[e_{t-k}^{2}\right]+\left(\sigma^{2}\right)^{2}\\
+ & =\left(\sigma^{2}\right)^{2}-\left(\sigma^{2}\right)^{2}-\left(\sigma^{2}\right)^{2}+\left(\sigma^{2}\right)^{2}\\
+ & =0
+\end{align*}
+
+\end_inset
+
+for all 
+\begin_inset Formula $j$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+So it's white noise.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Problem 3
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+ARMA + ARMA arithmetic 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Problem 3a
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+Suppose that 
+\begin_inset Formula $\mathrm{y}_{1\mathrm{t}}\sim ARMA(2,1)$
+\end_inset
+
+ and 
+\begin_inset Formula $y_{2t}\sim ARMA(1,2)$
+\end_inset
+
+ are two independent processes.
+ Process 
+\begin_inset Formula $x_{t}=y_{1t}+y_{2t}$
+\end_inset
+
+ is also an 
+\begin_inset Formula $ARMA(p,q)$
+\end_inset
+
+ process.
+ What 
+\begin_inset Formula $p$
+\end_inset
+
+ and 
+\begin_inset Formula $q$
+\end_inset
+
+ describe 
+\begin_inset Formula $x$
+\end_inset
+
+? Prove.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace medskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We have
+\begin_inset Formula 
+\begin{align*}
+y_{1t} & =\alpha_{11}y_{1t-1}+\alpha_{12}y_{1t-2}+e_{1t}\\
+\iff y_{1t}-\alpha_{11}y_{1t-1}-\alpha_{12}y_{1t-2} & =e_{1t}\\
+\iff(1-\alpha_{11}L-\alpha_{12}L^{2})y_{1t} & =e_{1t}\\
+\iff y_{1t} & =\frac{e_{1t}}{(1-\alpha_{11}L-\alpha_{12}L^{2})}\\
+\\
+\\
+\iff\alpha_{1}(L)y_{1t} & =e_{1t}\\
+\iff y_{t} & =\frac{e_{1t}}{\alpha_{1}(L)}
+\end{align*}
+
+\end_inset
+
+and
+\begin_inset Formula 
+\begin{align*}
+y_{2t} & =\alpha_{21}y_{2t-1}+e_{2t}+\beta_{21}e_{2t-1}\\
+\iff y_{2t}-\alpha_{21}y_{2t-1} & =e_{2t}+\beta_{21}e_{2t-1}\\
+\iff(1-\alpha_{21}L)y_{2t} & =(1+\beta_{21}L)e_{2t}\\
+\iff y_{2t} & =\frac{(1+\beta_{21}L)}{(1-\alpha_{21}L)}e_{2t}
+\end{align*}
+
+\end_inset
+
+so then define 
+\begin_inset Formula $x_{t}=y_{1t}+y_{2t}$
+\end_inset
+
+ so
+\begin_inset Formula 
+\begin{align*}
+x_{t} & =y_{1t}+y_{2t}\\
+ & =\frac{1}{(1-\alpha_{11}L-\alpha_{12}L^{2})}e_{1t}+\frac{(1+\beta_{21}L)}{(1-\alpha_{21}L)}e_{2t}\\
+\iff(1-\alpha_{11}L-\alpha_{12}L^{2})x_{t} & =e_{1t}+(1-\alpha_{11}L-\alpha_{12}L^{2})\frac{(1+\beta_{21}L)}{(1-\alpha_{21}L)}e_{2t}\\
+\iff(1-\alpha_{21}L)(1-\alpha_{11}L-\alpha_{12}L^{2})x_{t} & =(1-\alpha_{21}L)e_{1t}+(1-\alpha_{11}L-\alpha_{12}L^{2})(1+\beta_{21}L)e_{2t}
+\end{align*}
+
+\end_inset
+
+where the LHS is a AR(3)
+\begin_inset Formula 
+\begin{align*}
+(1-\alpha_{21}L)(1-\alpha_{11}L-\alpha_{12}L^{2})x_{t} & =\left(1-\alpha_{11}L-\alpha_{12}L^{2}-\alpha_{21}L-\alpha_{11}\alpha_{21}L^{2}-\alpha_{12}\alpha_{21}L^{3}\right)x_{t}\\
+ & =\left(1-(\alpha_{11}+\alpha_{21})L-(\alpha_{12}+\alpha_{11}\alpha_{21})L^{2}-\alpha_{12}\alpha_{21}L^{3}\right)x_{t}
+\end{align*}
+
+\end_inset
+
+and the RHS is 
+\begin_inset Formula 
+\begin{align*}
+(1-\alpha_{21}L)e_{1t}+(1-\alpha_{11}L-\alpha_{12}L^{2})(1+\beta_{21}L)e_{2t} & =(1-\alpha_{21}L)e_{1t}+(1+\beta_{21}L-\beta_{21}L-\alpha_{11}\beta_{21}L^{2}-\alpha_{12}\alpha_{21}L^{3})e_{2t}\\
+ & =(1-\alpha_{21}L)e_{1t}+(1+(\beta_{21}-\beta_{21})L-\alpha_{11}\beta_{21}L^{2}-\alpha_{12}\alpha_{21}L^{3})e_{2t}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Problem 3b
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+Suppose that 
+\begin_inset Formula $y_{1t}\sim ARMA\left(p_{1},q_{1}\right)$
+\end_inset
+
+ and 
+\begin_inset Formula $y_{2t}\sim ARMA\left(p_{2},q_{2}\right)$
+\end_inset
+
+ are two independent processes.
+ Again, 
+\begin_inset Formula $x_{t}=y_{1t}+y_{2t}$
+\end_inset
+
+ is also an A R M A
+\begin_inset Formula $(p,q)$
+\end_inset
+
+ process.
+ What 
+\begin_inset Formula $p$
+\end_inset
+
+ and 
+\begin_inset Formula $q$
+\end_inset
+
+ describe 
+\begin_inset Formula $x$
+\end_inset
+
+ in this general case? Prove.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace medskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Claim: 
+\begin_inset Formula $x_{t}$
+\end_inset
+
+ is a ARMA(
+\begin_inset Formula $p$
+\end_inset
+
+,
+\begin_inset Formula $q$
+\end_inset
+
+) process where 
+\begin_inset Formula $p\le p_{1}+p_{2}$
+\end_inset
+
+ and 
+\begin_inset Formula $q\le\max\{p_{1}+q_{2},p_{2}+q_{1}\}$
+\end_inset
+
+, and this holds with equality when there's no common factor.
+\end_layout
+
+\begin_layout Standard
+Proof: Write 
+\begin_inset Formula $y_{it}$
+\end_inset
+
+ for 
+\begin_inset Formula $i=1,2$
+\end_inset
+
+ as
+\begin_inset Formula 
+\[
+\alpha_{i}(L)y_{it}=\beta_{i}(L)e_{it}
+\]
+
+\end_inset
+
+then multiply 
+\begin_inset Formula $x_{t}$
+\end_inset
+
+ by 
+\begin_inset Formula $\alpha_{1}(L)\alpha_{2}(L)$
+\end_inset
+
+ to get
+\begin_inset Formula 
+\begin{align*}
+\alpha_{1}(L)\alpha_{2}(L)x_{t} & =\alpha_{1}(L)\alpha_{2}(L)(y_{1t}+y_{2})\\
+ & =\alpha_{1}(L)\alpha_{2}(L)y_{1t}+\alpha_{1}(L)\alpha_{2}(L)y_{2t}\\
+ & =\alpha_{1}(L)\alpha_{2}(L)\frac{\beta_{1}(L)}{\alpha_{1}(L)}e_{1t}+\alpha_{1}(L)\alpha_{2}(L)\frac{\beta_{2}(L)}{\alpha_{2}(L)}e_{2t}\\
+ & =\alpha_{2}(L)\beta_{1}(L)e_{1t}+\alpha_{1}(L)\beta_{2}(L)e_{2t}.
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Problem 4
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+Working problem.
+ Problem 8.3 in Romer's textbook 4th edition; also see problem 8.12 for derivation
+s; scans for these are on p.
+ 3).
+ Contrast ACF/PACF for actual and measured consumption.
+ Download quarterly US series for consumption of non-durables (FRED database).
+ Plot ACF/PACF.
+ Compare your results with results and predictions in Mankiw (1982).
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+8.3.
+ The time-averaging problem.
+ (Working, 1960.) Actual data give not consumption at a point in time, but
+ average consumption over an extended period, such as a quarter.
+ This problem asks you to examine the effects of this fact.
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+Suppose that consumption follows a random walk: 
+\begin_inset Formula $C_{t}=C_{t-1}+e_{t}$
+\end_inset
+
+, where 
+\begin_inset Formula $e$
+\end_inset
+
+ is white noise.
+ Suppose, however, that the data provide average consumption over two-period
+ intervals; that is, one observes 
+\begin_inset Formula $\left(C_{t}+C_{t+1}\right)/2,\left(C_{t+2}+C_{t+3}\right)/2$
+\end_inset
+
+, and so on.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Problem 4a
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+Find an expression for the change in measured consumption from one two-period
+ interval to the next in terms of the 
+\begin_inset Formula $e$
+\end_inset
+
+'s.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace medskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Let's clear up some notation.
+ True consumption 
+\begin_inset Formula $\{C_{t}\}$
+\end_inset
+
+ follows a random walk
+\begin_inset Formula 
+\[
+C_{t}=C_{t-1}+e_{t}
+\]
+
+\end_inset
+
+but measured (or observed) consumption 
+\begin_inset Formula $\{\hat{C}_{t}\}$
+\end_inset
+
+ is a two-period average of the current and last period's true consumption
+\begin_inset Formula 
+\[
+\hat{C}_{t}=\frac{C_{t}+C_{t-1}}{2}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Then the change in measured consumption is after substituting in repeatedly
+\begin_inset Formula 
+\begin{align*}
+\Delta\hat{C}_{t} & =\hat{C}_{t}-\hat{C}_{t-1}\\
+ & =\frac{C_{t}+C_{t-1}}{2}-\frac{C_{t-1}+C_{t-2}}{2}\\
+ & =\frac{1}{2}\left[C_{t}-C_{t-2}\right]\\
+ & =\frac{1}{2}\left[C_{t-1}+e_{t}-C_{t-2}\right]\\
+ & =\frac{1}{2}\left[C_{t-2}+e_{t-1}+e_{t}-C_{t-2}\right]\\
+ & =\frac{1}{2}\left[e_{t}+e_{t-1}\right]\\
+ & =\frac{1}{2}\Delta e_{t}.
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Problem 4b
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+Is the change in measured consumption uncorrelated with the previous value
+ of the change in measured consumption? In light of this, is measured consumptio
+n a random walk?
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace medskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Note that 
+\begin_inset Formula $\mathbb{E}\left[\Delta\hat{C}_{t}\right]=\frac{1}{2}\mathbb{E}\left[\Delta e_{t}\right]=0$
+\end_inset
+
+.
+ So then
+\begin_inset Formula 
+\begin{align*}
+\text{Cov}\left[\Delta\hat{C}_{t},\Delta\hat{C}_{t-1}\right] & =\text{\ensuremath{\mathbb{E}}}\left[\Delta\hat{C}_{t}\Delta\hat{C}_{t-1}\right]\\
+ & =\frac{1}{2}\text{\ensuremath{\mathbb{E}}}\left[\Delta e_{t}\Delta e_{t-1}\right]\\
+ & =\frac{1}{2}\text{\ensuremath{\mathbb{E}}}\left[(e_{t}-e_{t-1})(e_{t-1}-e_{t-2})\right]\\
+ & =\frac{1}{2}\text{\ensuremath{\mathbb{E}}}\left[e_{t}e_{t-1}-e_{t}e_{t-2}-e_{t-1}^{2}+e_{t-1}e_{t-2}\right]\\
+ & =-\frac{1}{2}\sigma_{e}^{2}
+\end{align*}
+
+\end_inset
+
+where 
+\begin_inset Formula $\sigma_{e}^{2}=\mathbb{E}\left[e_{t}^{2}\right]$
+\end_inset
+
+.
+ So then there is some correlation and measured consumption is not a random
+ walk.
+\end_layout
+
+\begin_layout Subsection
+Problem 4c
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+Given your result in part (a), is the change in consumption from one two
+ period interval to the next necessarily uncorrelated with anything known
+ as of the first of these two-period intervals? Is it necessarily uncorrelated
+ with anything known as of the two-period interval immediately preceding
+ the first of the two-period intervals?
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace medskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+From part a we have 
+\begin_inset Formula $\Delta\hat{C}_{t}=\frac{1}{2}\Delta e_{t}$
+\end_inset
+
+ so the question is if 
+\begin_inset Formula $\text{Cov}_{t-1}\left[\text{\ensuremath{\Delta}\ensuremath{\hat{C}_{t}}}\right]=0$
+\end_inset
+
+? We have
+\begin_inset Formula 
+\begin{align*}
+\Delta\hat{C}_{t} & =\frac{1}{2}\Delta e_{t}\\
+ & =\frac{1}{2}\left[e_{t}-e_{t-1}\right].
+\end{align*}
+
+\end_inset
+
+ So if consumption is truly random walk, that is, 
+\begin_inset Formula $e_{t-1}$
+\end_inset
+
+ is effectively a forecast error realized at 
+\begin_inset Formula $t-1$
+\end_inset
+
+, the no 
+\begin_inset Formula $\Delta\hat{C}_{t}$
+\end_inset
+
+ is not correlated with anything known at 
+\begin_inset Formula $t-1$
+\end_inset
+
+.
+ Similarly if we shift the reference period to 
+\begin_inset Formula $t-2$
+\end_inset
+
+ since consumption is assumed to be a random walk here.
+ 
+\end_layout
+
+\begin_layout Subsection
+Problem 4d
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+Suppose that measured consumption for a two-period interval is not the average
+ over the interval, but consumption in the second of the two periods.
+ That is, one observes 
+\begin_inset Formula $C_{t+1},C_{t+3}$
+\end_inset
+
+, and so on.
+ In this case, is measured consumption a random walk?
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace medskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Lets write it out
+\begin_inset Formula 
+\begin{align*}
+\Delta\hat{C}_{t} & =\hat{C}_{t}-\hat{C}_{t-1}\\
+ & =C_{t}-C_{t-2}\\
+ & =C_{t-1}+e_{t}-C_{t-2}\\
+ & =\Delta C_{t-1}+e_{t}\\
+ & =e_{t-1}+e_{t}\\
+\iff\hat{C}_{t} & =\alpha_{t-1}+\hat{C}_{t-1}+e_{t}
+\end{align*}
+
+\end_inset
+
+where we defined 
+\begin_inset Formula $\alpha_{t-1}\equiv e_{t-1}$
+\end_inset
+
+, it's a random walk with drift where the drift 
+\begin_inset Formula $\alpha_{t-1}$
+\end_inset
+
+ is random, but known as of 
+\begin_inset Formula $t-1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+Problem 4e
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+Contrast ACF/PACF for actual and measured consumption.
+ Download quarterly US series for consumption of non-durables (FRED database).
+ Plot ACF/PACF.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace medskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+This is in the notebook ``4.ipynb
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Here's the ACF and PCF for the simulated actual and measured consumption
+ along with the observed non-durables consumption.
+\begin_inset VSpace medskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename Figures/q4.png
+	lyxscale 50
+	width 95text%
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Problem 5
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+Download U.S.
+ series for CPI inflation rate, real GDP growth rate, civilian unemployment
+ rate, USD/UK pound exchange rate (You may want to use St.
+ Louis Fed data base FRED).
+ All series are at quarterly frequency (aggregate [average] to quarterly
+ frequency if necessary).
+ Exclude data after December 2019 (i.e., do not cover the COVID19 period).
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace medskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+All code are in the notebook ``5.ipynb
+\begin_inset Quotes erd
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Note: for the CPI and GDP, I converted to QoQ growth rates, not annualizing.
+ Then I construct 10 lags, and finally drop all missing observations (including
+ those created by constructing growth rates and lagging) in order to have
+ a super nice and clean balanced panel from 1973Q3 to 2019Q4.
+\end_layout
+
+\begin_layout Subsection
+Problem 5a
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+Estimate and plot ACF and PACF.
+ Describe common patterns.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace medskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Here's the ACF and PACF.
+ For inflation, the ACF dies out quickly and the first lag of the PACF,
+ and maybe the next two, stick out.
+ For GDP, the first lag sticks out but seems unstable.
+ And for both unemployment and FX, the first lag sticks out.
+\end_layout
+
+\begin_layout Standard
+For all four series, the it looks like the first autocorrelation sticks
+ out, so maybe a AR(1) works well.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace medskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename Figures/q5a.png
+	lyxscale 50
+	width 95text%
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Problem 5b
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+Using Box-Jenkins approach, what ARMA(p,q) model may be appropriate for
+ these series? Discuss.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace medskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Problem 5c
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+Using BIC, choose a parsimonious parametric 
+\begin_inset Formula $AR(p)$
+\end_inset
+
+ model.
+ Report the values of BIC for 
+\begin_inset Formula $\mathrm{p}=0,\ldots,10$
+\end_inset
+
+.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace medskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The BIC suggests lags of 3, 1, 1, and 2 for inflation, FX, GDP and unemployment,
+ respectively.
+\begin_inset VSpace medskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="5" columns="11">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0pt">
+<column alignment="center" valignment="top" width="0pt">
+<column alignment="center" valignment="top" width="0pt">
+<column alignment="center" valignment="top" width="0pt">
+<column alignment="center" valignment="top" width="0pt">
+<column alignment="center" valignment="top" width="0pt">
+<column alignment="center" valignment="top" width="0pt">
+<column alignment="center" valignment="top" width="0pt">
+<column alignment="center" valignment="top" width="0pt">
+<column alignment="center" valignment="top" width="0pt">
+<column alignment="center" valignment="top" width="0pt">
+<row>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Lag
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+6
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+7
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+8
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+9
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+10
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+CPI
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+166.36
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+165.98
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+160.43
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+162.04
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+164.47
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+168.93
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+172.69
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+175.93
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+179.89
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+183.36
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+GDP
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+208.39
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+211.86
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+215.48
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+218.94
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+223.39
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+225.44
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+228.22
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+224.66
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+223.44
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+227.27
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Unemployment
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+41.51
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2.44
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4.67
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+6.46
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+10.81
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+15.23
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+18.22
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+21.71
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+26.08
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+FX
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-173.91
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-169.48
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-165.6
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-161.42
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-156.96
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-152.57
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-148.44
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-144.44
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-140.05
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-135.64
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Problem 5d
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+Conduct the diagnostic checking of the estimated optimal AR model: serial
+ correlation of residuals (e.g., Box-Ljung; you may get the code for it at
+ http://ideas.repec.org/c/boc/bocode/t961403.html); ACF/PACF for estimated
+ residuals; normality of the error term (Jarque-Bera test; "jbtest" in Matlab).
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace medskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+I use the Jarque-Bera test.
+ The null is that the residuals are normally distributed, and we can see
+ that the null is rejected quite strongly (almost all at the 0.01 level)
+ for all specifications.
+ Here's the table, with the p-value in parentheses, for every specification.
+\begin_inset VSpace medskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="9" columns="11">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0pt">
+<column alignment="center" valignment="top" width="0pt">
+<column alignment="center" valignment="top" width="0pt">
+<column alignment="center" valignment="top" width="0pt">
+<column alignment="center" valignment="top" width="0pt">
+<column alignment="center" valignment="top" width="0pt">
+<column alignment="center" valignment="top" width="0pt">
+<column alignment="center" valignment="top" width="0pt">
+<column alignment="center" valignment="top" width="0pt">
+<column alignment="center" valignment="top" width="0pt">
+<column alignment="center" valignment="top" width="0pt">
+<row>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Lag
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+6
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+7
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+8
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+9
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+10
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+CPI
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+996.86
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1150.2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1504.3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1637.28
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1400.92
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1393.83
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1345.24
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+854.55
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+716.78
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+673.31
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row bottomspace="0.5em">
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+(0.00)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+(0.00)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+(0.00)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+(0.00)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+(0.00)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+(0.00)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+(0.00)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+(0.00)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+(0.00)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+(0.00)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+GDP
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+84.42
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+106.45
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+81.01
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+64.7
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+64.71
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+60.88
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+58.28
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+65.56
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+23.05
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+19.72
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row bottomspace="0.5em">
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+(0.00)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+(0.00)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+(0.00)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+(0.00)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+(0.00)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+(0.00)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+(0.00)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+(0.00)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+(0.00)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+(0.00)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Unemployment
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+37.32
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+12.61
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+13.02
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+9.69
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+7.91
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+7.46
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+7.22
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+6.23
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5.4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5.68
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row bottomspace="0.5em">
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+(0.00)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+(0.00)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+(0.00)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+(0.01)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+(0.02)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+(0.02)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+(0.03)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+(0.04)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+(0.07)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+(0.06)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+FX
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+31.3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+31.49
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+31.81
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+37.46
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+37.47
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+35.72
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+35.4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+37.04
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+38.34
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+39
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+(0.00)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+(0.00)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+(0.00)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+(0.00)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+(0.00)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+(0.00)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+(0.00)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+(0.00)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+(0.00)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+(0.00)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Problem 5e
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+Estimate the model using 
+\begin_inset Formula $1,\ldots,\mathrm{T}-10$
+\end_inset
+
+ observations and compute point forecasts and forecast errors for 
+\begin_inset Formula $T-9,\ldots,T$
+\end_inset
+
+ (for now, ignore sampling uncertainty in parameter estimates).
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace medskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The file ``q5e.txt
+\begin_inset Quotes erd
+\end_inset
+
+ includes the point forecasts and forecast errors.
+ The suffix ``_e
+\begin_inset Quotes erd
+\end_inset
+
+ denotes forecast error and the suffix ``_yhat
+\begin_inset Quotes erd
+\end_inset
+
+ denotes forecast.
+ Below reports the RMSE for the optimal models.
+ I prefer the RMSE as it is in our original units for interpretability.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace medskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="5">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0pt">
+<column alignment="center" valignment="top" width="0pt">
+<column alignment="center" valignment="top" width="0pt">
+<column alignment="center" valignment="top" width="0pt">
+<column alignment="center" valignment="top" width="0pt">
+<row>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Variable
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+CPI
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+FX
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+GDP
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Unemployment
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+RMSE
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.32
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.05
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.22
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.24
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Problem 5f
+\end_layout
+
+\begin_layout Standard
+\noindent
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+Estimate the same model using 
+\begin_inset Formula $T-50,\ldots,T-10$
+\end_inset
+
+ observations and compute point forecasts and forecast errors for 
+\begin_inset Formula $T-9,\ldots,T$
+\end_inset
+
+ (for now, ignore sampling uncertainty in parameter estimates).
+ Compare with forecasts and forecast errors in e).
+ Discuss.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace medskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The file ``q5f.txt
+\begin_inset Quotes erd
+\end_inset
+
+ includes the point forecasts and forecast errors.
+ The suffix ``_e
+\begin_inset Quotes erd
+\end_inset
+
+ denotes forecast error and the suffix ``_yhat
+\begin_inset Quotes erd
+\end_inset
+
+ denotes forecast.
+ Below reports the RMSE for the optimal models.
+ I prefer the RMSE as it is in our original units for interpretability.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace medskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="5">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0pt">
+<column alignment="center" valignment="top" width="0pt">
+<column alignment="center" valignment="top" width="0pt">
+<column alignment="center" valignment="top" width="0pt">
+<column alignment="center" valignment="top" width="0pt">
+<row>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Variable
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+CPI
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+FX
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+GDP
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Unemployment
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+RMSE
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.29
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.05
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.23
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.19
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\begin_inset VSpace medskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+So it looks like the models perform roughly similar using the two training
+ periods.
+ Perhaps CPI and unemployment perform a bit better using the recent sample.
+ This is the trade off between using longer training samples (more data
+ and more precision in the estimated model coefficients) vs.
+ using shorter training samples (better reflect any changes in the underlying
+ data generating processes).
+\end_layout
+
+\end_body
+\end_document
